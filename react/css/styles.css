@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.containerPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerQuantity {
+    display: flex;
+    align-items: center;
+}
+
+.containerQuantity p,
+.containerPrincipal input[type=submit] {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    min-width: 200px;
+}
+
+.containerPrincipal input[type=submit] {
+    border-radius: 2px;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 460px) {
+    .containerQuantity {
+        flex-direction: column;
+    }
+
+    .containerPrincipal input {
+        width: 120px;
+    }
+
+    .containerPrincipal input[type=submit] {
+        min-width: 130px;
+    }
+}
